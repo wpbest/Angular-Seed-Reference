@@ -129,6 +129,13 @@ Modify tsconfig.json to configure strict by adding "strict": true, to "compilerO
     "strict": true,
 ```
 
+Add Chrome debugging configuration
+
+Create folder .vscode and add file launch.json
+
+```
+```
+
 ## Development server
 
 
