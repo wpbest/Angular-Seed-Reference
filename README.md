@@ -176,6 +176,71 @@ Create folder .vscode and add file launch.json
   }
 ```
 
+### Add Firebase hosting
+
+Add the needed packages
+
+```
+npm install --save firebase @angular/fire 
+```
+
+### Import the Angular Fire libraries
+
+Modify app.module.ts to import the Firebase libraries. Add import for environment
+
+```
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { environment } from '../environments/environment';
+
+@NgModule({
+  imports: [
+    ...
+    AngularFireModule.initializeApp(environment.firebaseConfig), // initialize
+    AngularFirestoreModule, // firestore
+    AngularFireAuthModule, // auth
+    AngularFireStorageModule // storage
+  ],
+  ...
+})  
+```
+
+Modify environment.ts and environment.prod.ts and add the firebase credentials.
+
+environment.ts:
+```
+export const environment = {
+  production: false,
+  firebaseConfig: {
+    apiKey: 'AIzaSyDHKrTrrL2YBM3cBENLWQS1ZuHhPKoQbYM',
+    authDomain: 'dev-angular-seed.firebaseapp.com',
+    databaseURL: 'https://dev-angular-seed.firebaseio.com',
+    projectId: 'dev-angular-seed',
+    storageBucket: 'dev-angular-seed.appspot.com',
+    messagingSenderId: '143058689931',
+    appId: '1:143058689931:web:8cd65a018eb1e6fd'  
+  }
+};
+```
+
+environment.prod.ts
+
+```
+export const environment = {
+  production: true,
+  firebaseConfig: {
+    apiKey: 'AIzaSyD_rYkOPa-m15OhNEA8trbkK-GAwRf-5eo',
+    authDomain: 'prod-angular-seed.firebaseapp.com',
+    databaseURL: 'https://prod-angular-seed.firebaseio.com',
+    projectId: 'prod-angular-seed',
+    storageBucket: 'prod-angular-seed.appspot.com',
+    messagingSenderId: '638138759316',
+    appId: '1:638138759316:web:533ec4fb4616f464'  
+  }
+};
+```
 ## Development server
 
 
