@@ -284,6 +284,19 @@ Add the meta data in the ```<head>``` section in the intex.html file in the src 
   <meta name="description" content="Angular seed. Essential components and best practices for building the perfect Angular application.">
 ```
 
+Modify angular.json and add "src/robots.txt" and "src/sitemap.xml" in tha assets,
+
+```
+            "assets": [
+              "src/favicon.ico",
+              "src/assets",
+              "src/robots.txt",
+              "src/sitemap.xml
+            ],
+```
+
+Add the meta data in the ```<head>``` section in the intex.html file in the src folder:
+
 ## Separating Dev and Prod Environment on Firebase
 
 Add an additional firebase project by using the firebase use --add. 
