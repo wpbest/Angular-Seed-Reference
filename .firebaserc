@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "dev-angular-seed"
+    "default": "dev-angular-seed",
+    "prod": "prod-angular-seed"
   }
 }

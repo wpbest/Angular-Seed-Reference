@@ -14,10 +14,22 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 [RxJS](http://reactivex.io/rxjs/)
 
+[Firebase](https://firebase.google.com/docs/)
+
+[Firebase CLI](https://firebase.google.com/docs/cli/)
+
+[AnguarFire](https://github.com/angular/angularfire2)
+
 ## Install the Angular CLI
 
 ```
 npm install -g @angular/cli
+```
+
+# Install Firebase Tools
+
+```
+npm install -g firebase-tools  
 ```
 
 ## Generate Code scaffolding
@@ -241,8 +253,60 @@ export const environment = {
   }
 };
 ```
-## Development server
+## Separating Dev and Prod Environment on Firebase
 
+Add an additional firebase project by using the firebase use --add. 
+
+```
+firebase use --add
+? Which project do you want to add? prod-angular-seed
+? What alias do you want to use for this project? (e.g. staging) prod
+Created alias prod for prod-angular-seed.
+```
+
+To deploy a firebase project, there are two methods: Use with Deploy and Deploy with -P flag.
+
+###  Use with Deploy
+
+#### dev environment
+
+```
+firebase use default
+firebase deploy
+```
+
+#### prod environment 
+
+```
+firebase use prod
+firebase deploy
+```
+
+### Deploy with -P flag
+
+#### dev environment
+
+```
+firebase deploy -P default
+```
+
+#### prod environment
+
+```
+firebase deploy -P prod
+```
+
+## Build and Deploy to the dev environment
+
+```
+npm run deploy:dev
+```
+
+## Build and Deploy to the prod environment
+
+```
+npm run deploy:prod
+```
 
 ## Development server
 

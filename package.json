@@ -6,6 +6,8 @@
     "start": "ng serve --configuration es5",
     "build": "ng build --configuration es5",
     "prod": "ng build --configuration es5 --prod",
+    "deploy:dev": "firebase use default && npm run prod && firebase deploy",
+    "deploy:prod": "firebase use prod && npm run prod && firebase deploy",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
