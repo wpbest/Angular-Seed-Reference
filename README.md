@@ -253,6 +253,37 @@ export const environment = {
   }
 };
 ```
+
+## Add SEO (Search Engine optimization)
+
+Create the file robots.txt to the src folder and create the text
+
+```
+User-agent: *
+Allow: /
+```
+
+Create the file sitemap.xml to the src folder and create the text:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>https://cofchristthorntonproduction.firebaseapp.com/</loc>
+      <lastmod>2019-08-09</lastmod>
+      <changefreq>always</changefreq>
+      <priority>1.0</priority>
+   </url>
+</urlset>
+```
+
+Add the meta data in the ```<head>``` section in the intex.html file in the src folder:
+
+```
+  <link rel="canonical" href="https://angularseed.org/" />
+  <meta name="description" content="Angular seed. Essential components and best practices for building the perfect Angular application.">
+```
+
 ## Separating Dev and Prod Environment on Firebase
 
 Add an additional firebase project by using the firebase use --add. 
