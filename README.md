@@ -277,7 +277,7 @@ Create the file sitemap.xml to the src folder and create the text:
 </urlset>
 ```
 
-Add the meta data in the ```<head>``` section in the intex.html file in the src folder:
+Add the meta data in the ```<head>``` section in the index.html file in the src folder:
 
 ```
   <link rel="canonical" href="https://angularseed.org/" />
@@ -295,7 +295,7 @@ Modify angular.json and add "src/robots.txt" and "src/sitemap.xml" in tha assets
             ],
 ```
 
-Add the meta data in the ```<head>``` section in the intex.html file in the src folder:
+Add the meta data in the ```<head>``` section in the index.html file in the src folder:
 
 ## Separating Dev and Prod Environment on Firebase
 
