@@ -12,13 +12,19 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 [AngularCLI](https://cli.angular.io/)
 
-[RxJS](http://reactivex.io/rxjs/)
+[RxJS](https://rxjs-dev.firebaseapp.com/)
 
 [Firebase](https://firebase.google.com/docs/)
 
 [Firebase CLI](https://firebase.google.com/docs/cli/)
 
 [AnguarFire](https://github.com/angular/angularfire2)
+
+[Firestore](https://github.com/angular/angularfire2/blob/master/docs/firestore/documents.md)
+
+[Angular Universal](https://angular.io/guide/universal)
+
+[Deploying your Universal application on Cloud Functions for Firebase](https://github.com/angular/angularfire2/blob/master/docs/universal/cloud-functions.md)
 
 ## Install the Angular CLI
 
